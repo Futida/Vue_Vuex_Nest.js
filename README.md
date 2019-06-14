@@ -6,4 +6,4 @@
 
 2.  run server - ```npm run start```;
     run client - ```npm run serve```;
-    run test - ```npm run serve```;
+    run test - ```npm run test:unit```;
