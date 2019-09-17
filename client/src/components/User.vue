@@ -19,20 +19,19 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex';
-  import * as types from '../store/types';
+import { mapGetters } from "vuex";
+import * as types from "../store/types";
 
-  export default {
-    props: ['id'],
+export default {
+  props: ["id"],
 
-    computed: {
-      ...mapGetters({
-        getUser: types.GET_USER
-      }),
-      user() {
-        return this.getUser(this.id)
-      }
+  computed: {
+    ...mapGetters({
+      getUser: types.GET_USER
+    }),
+    user() {
+      return this.getUser(this.id);
     }
-
   }
+};
 </script>
